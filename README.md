@@ -13,7 +13,7 @@ Yatube - социальная сеть для публикации постов 
 
 Клонировать репозиторий и перейти в него в командной строке:
 
-```html git clone git@github.com:terrazavr/api_final_yatube.git```
+    html git clone git@github.com:terrazavr/api_final_yatube.git
 
 ```cd api_final_yatube```
 
