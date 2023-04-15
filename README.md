@@ -2,7 +2,7 @@
 Yatube - социальная сеть для публикации постов и статей.
 В данном репозитории реализован API для взаимодействия с данной платформой.
 
-#### Функционал проекта:
+## Функционал проекта:
  * Создание, получение, обновление, удаление публикаций
  * Создание, получение, обновление, удаление комментариев к постам
  * Просмотр сообществ по категориям
@@ -15,50 +15,58 @@ Yatube - социальная сеть для публикации постов 
 
     html git clone git@github.com:terrazavr/api_final_yatube.git
 
-```cd api_final_yatube```
+    cd api_final_yatube
 
 Cоздать и активировать виртуальное окружение:
-```python3 -m venv env```
+
+    python3 -m venv env
 
 Если у вас Linux/macOS
-```source env/bin/activate```
+
+    source env/bin/activate
 
 Если у вас windows
-```source env/scripts/activate```
+    
+    source env/scripts/activate
 
 Обновить pip
-```python3 -m pip install --upgrade pip```
+    python3 -m pip install --upgrade pip
 
 Установить зависимости из файла requirements.txt:
-```pip install -r requirements.txt```
+
+    pip install -r requirements.txt
 
 Выполнить миграции:
-```python3 manage.py migrate```
+
+    python3 manage.py migrate
 
 Запустить проект:
-```python3 manage.py runserver```
+
+    python3 manage.py runserver
 
 
 ### После запуска проекта, документация будет доступна по адресу:
 
-```http://localhost:port/redoc/```
+    http://localhost:port/redoc/
 
 ## Примеры запросов к API:
 
 Получить список всех постов (GET):
-```http://127.0.0.1:8000/api/v1/posts/```
+    http://127.0.0.1:8000/api/v1/posts/
 
 Получить определенный пост (GET):
-```http://127.0.0.1:8000/api/v1/posts/1/```
+    http://127.0.0.1:8000/api/v1/posts/1/
 
 Получить коментарии определенного поста (GET):
-```http://127.0.0.1:8000/api/v1/posts/1/comments/```
+
+    http://127.0.0.1:8000/api/v1/posts/1/comments/
 
 Получить список всех групп (GET):
-```http://127.0.0.1:8000/api/v1/groups/```
+
+    http://127.0.0.1:8000/api/v1/groups/
 
 Создать новый пост (POST):
 
 (Требуется аутентификация)
 
-```http://127.0.0.1:8000/api/v1/posts/```
+    http://127.0.0.1:8000/api/v1/posts/
